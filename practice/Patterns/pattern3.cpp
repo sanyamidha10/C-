@@ -1,8 +1,9 @@
-// 11111
-// 22222
-// 33333
-// 44444
-// 55555
+// 1 2 3 4 5 
+// 1 2 3 4 5
+// 1 2 3 4 5 
+// 1 2 3 4 5
+// 1 2 3 4 5
+
 
 #include<iostream>
 using namespace std;
@@ -13,14 +14,14 @@ int main(){
     cin>>n;
 
     int i = 1;
+
     while(i<=n){
         int j = 1;
         while(j<=n){
-            cout<<i;
+            cout<<j<<" ";
             j = j+1;
         }
         cout<<endl;
         i = i+1;
     }
-
 }
