@@ -1,12 +1,9 @@
-//       *
-//     * *
-//   * * *
 // * * * *
-// 1 while loop for row
-// 
-// 1 while lop for printing spaces --->calculate the logic of spaces () ---> n-row spaces
-// 
-// 1 while loop for printing * ---->calculate the logic of what to print in column(Here its specified stars)
+//   * * *
+//     * *
+//       *
+
+// spaces = row -1
 
 #include<iostream>
 using namespace std;
@@ -18,22 +15,18 @@ int main(){
 
     int row = 1;
     while(row<=n){
-
-        // for printing spaces
-        int spaces = n - row;
+        int spaces = row - 1;
         while(spaces){
             cout<<" ";
             spaces = spaces - 1;
         }
-
-        // for printing stars
         int col = 1;
-        while(col<=row){
+        while(col<=n-row+1){
             cout<<"*";
             col = col + 1;
         }
-
         cout<<endl;
         row = row + 1;
     }
+
 }
